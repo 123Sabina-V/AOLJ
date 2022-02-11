@@ -1,0 +1,75 @@
+.online
+    &__background
+        position: absolute
+        width: 100%
+        height: 100%
+        z-index: -1
+        &_img
+            object-fit: cover
+            object-position: 15%
+            z-index: -1
+            vertical-align: middle
+            width: 100%
+            height: 632px
+        &_gradient
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 632px
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.0001) 2.4%, #FFFFFF 99.84%, #FFFFFF 99.84%)
+        &__text
+            font-family: Work Sans
+            font-style: normal
+            font-weight: normal
+            font-size: 18px
+            line-height: 28px
+            color: #31364E
+            padding: 0
+            margin: 0
+    &__title
+        padding: 5px 0px 15px 0px
+        font-family: Lora
+        font-style: normal
+        font-weight: normal
+        font-size: 48px
+        line-height: 60px
+        color: #31364E
+    &__desc
+        font-family: Work Sans
+        font-style: normal
+        font-weight: 500
+        font-size: 20px
+        line-height: 30px
+        color: #31364E
+    &__button
+        margin: 40px 0px 200px 0px
+        background: linear-gradient(0deg, #3D8BE8 0%, #89BEEC 100%)
+        border-radius: 16px 
+        border-color: transparent
+        font-family: Work Sans
+        font-style: normal
+        font-weight: 600
+        font-size: 16px
+        line-height: 22px
+        text-align: center
+        color: #FFFFFF
+        padding: 14px 20px
+    &__block
+        padding-top: 120px
+
+@media (max-width: 768px)
+    .online
+        &__background
+            &_img
+                height: 832px
+            &_gradient
+                height: 832px
+
+@media (max-width: 422px)
+    .online
+        &__background
+            &_img
+                height: 950px
+            &_gradient
+                height: 950px

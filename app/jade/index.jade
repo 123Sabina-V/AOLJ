@@ -9,9 +9,325 @@ html(lang="en")
 		link(rel="stylesheet", href="css/libs.min.css")
 		link(rel="stylesheet", href="css/main.min.css")
 	body
-		header.header
-		main
-			section.example
-				.container
-		footer.footer
+		section 
+			.navbar__section 
+				img(src="img/logo.png", alt="")
+				nav.menu 
+					span 
+					span
+				.navbar__block(id="myLinks")
+					.navbar__dropdown  
+						.navbar__dropdown_btn
+							.navbar__link Courses
+							img(src="img/normal.png", alt="")
+						.navbar__content 
+							a(href="") Lorem 
+							a(href="") Lorem
+					.navbar__dropdown 
+						.navbar__dropdown_btn
+							.navbar__link Meditate
+							img(src="img/normal.png", alt="") 
+						.navbar__content 
+							a(href="") Lorem 
+							a(href="") Lorem
+					.navbar__dropdown 
+						.navbar__dropdown_btn
+							.navbar__link About
+							img(src="img/normal.png", alt="") 
+						.navbar__content 
+							a(href="") Lorem 
+							a(href="") Lorem
+					.navbar__dropdown 
+						.navbar__dropdown_btn
+							.navbar__link Chanels 
+							img(src="img/normal.png", alt="") 
+						.navbar__content 
+							a(href="") Lorem 
+							a(href="") Lorem
+					.navbar__dropdown 
+						.navbar__dropdown_btn
+							.navbar__link Contact
+							img(src="img/normal.png", alt="") 
+						.navbar__content 
+							a(href="") Lorem 
+							a(href="") Lorem
+					.navbar__btn Log In
+		section.online
+			.online__background
+				img(src="img/bgFirst.png", class="online__background_img" alt="")
+				.online__background_gradient
+			.container
+				.col-7
+					.online__block 
+						p.online__text Online
+						.online__title Volunteer Training Program
+							li.online__desc Grow personally, professionally, and spiritually
+							li.online__desc Overcome personal barriers; expand to your full potential
+							li.online__desc Feel inspired, confident, connected
+						button.online__button Register Now
+		section.skills 
+			.container 
+				.col-7
+					p.skills__title Empower your life and community with new leadership, teamwork, and communication skills. 		
+				.row 
+					.col-lg-3.col-md-6.col-12
+						img(src="img/transformational-education.svg", alt="")
+						p.skills__title_desc Transformational education 
+						p.skills__desc Learn with the experts—an organization dedicated for over 40 years to transforming lives across the globe
+					.col-lg-3.col-md-6.col-12
+						img(src="img/suitable-for-all.svg", alt="")
+						p.skills__title_desc Transformational education 
+						p.skills__desc Learn with the experts—an organization dedicated for over 40 years to transforming lives across the globe
+					.col-lg-3.col-md-6.col-12
+						img(src="img/live-online-program.svg", alt="")
+						p.skills__title_desc Transformational education 
+						p.skills__desc Learn with the experts—an organization dedicated for over 40 years to transforming lives across the globe
+					.col-lg-3.col-md-6.col-12 
+						img(src="img/support-guidance.svg", alt="")
+						p.skills__title_desc Transformational education 
+						p.skills__desc Learn with the experts—an organization dedicated for over 40 years to transforming lives across the globe
+		section.meet 
+			.meet__background
+				img(src="img/bgSecond.png", class="meet__background_img" alt="")
+				.meet__background_gradient
+			.container
+				.meet__section
+				.col-9.meet__block
+					p.meet__title Meet the confident, inspired YOU
+					p.meet__desc  We all have a why—a reason, a motivation, a hope. Yet sometimes fear, confidence,or skill level stand in the way. And that’s why we’re here!
+					p.meet__desc The Volunteer Training Program equips you with the skills and experience to move ahead empowered, beyond obstacles, on a journey to fulfill your why. And all with the support of mentors and leaders throughout the country. Let’s begin.
+					p.meet__subtitle Choose to thrive, and help others thrive too.
+					p.meet__text Practical tools, real experience
+				.row 
+					.col-12.col-lg-6.meet__distance  
+						.meet__box
+							.meet__box_position
+								img(src="img/unlock-your-potential.png", class="meet__box_img" alt="")
+								div
+									p.meet__box_title Unlock your potential
+									p.meet__box_desc Expand your horizons with life-enhancing wisdom, self-development, and transformative practices to access deep inner strength.
+					.col-12.col-lg-6.meet__distance 
+						.meet__box
+							.meet__box_position
+								img(src="img/unlock-your-potential.png", class="meet__box_img" alt="")
+								div
+									p.meet__box_title Unlock your potential
+									p.meet__box_desc Expand your horizons with life-enhancing wisdom, self-development, and transformative practices to access deep inner strength.
+					.col-12.col-lg-6.meet__distance  
+						.meet__box
+							.meet__box_position
+								img(src="img/unlock-your-potential.png", class="meet__box_img" alt="")
+								div
+									p.meet__box_title Unlock your potential
+									p.meet__box_desc Expand your horizons with life-enhancing wisdom, self-development, and transformative practices to access deep inner strength.
+					.col-12.col-lg-6.meet__distance  
+						.meet__box
+							.meet__box_position
+								img(src="img/unlock-your-potential.png", class="meet__box_img" alt="")
+								div
+									p.meet__box_title Unlock your potential
+									p.meet__box_desc Expand your horizons with life-enhancing wisdom, self-development, and transformative practices to access deep inner strength.
+					.col-12.col-lg-6.meet__distance   
+						.meet__box
+							.meet__box_position
+								img(src="img/unlock-your-potential.png", class="meet__box_img" alt="")
+								div
+									p.meet__box_title Unlock your potential
+									p.meet__box_desc Expand your horizons with life-enhancing wisdom, self-development, and transformative practices to access deep inner strength.
+					.col-12.col-lg-6.meet__distance  
+						.meet__box
+							.meet__box_position
+								img(src="img/unlock-your-potential.png", class="meet__box_img" alt="")
+								div
+									p.meet__box_title Unlock your potential
+									p.meet__box_desc Expand your horizons with life-enhancing wisdom, self-development, and transformative practices to access deep inner strength.
+				.col-9
+					p.meet__link * Prerequisite: Completion of SKY Breath Meditation, a Silent Retreat, and a recommendation from a local Art of Living instructor.
+		section.slider 
+			.slider__background
+					img(src="img/bgThird.png", class="slider__background_img" alt="")
+					.slider__background_gradient
+			.container
+				p.slider__title How lives are transformed
+				.div.slider__animate_btn  
+					img(class="arrow-right", src="img/icon-arrow-right.png", alt="") 
+					img(class="arrow-left", src="img/icon-arrow-right.png", alt="") 
+				.slider.js-sliden.slider__animate
+					.slider__set 
+						.slider__box
+							.slider__content 
+								img(src="img/avatarF.png", alt="")
+								p.slider__name Hayley Gigi P.
+							p.slider__desc “My experience was extremely profound”
+							a.slider__button Read more
+						.slider__box 
+							.slider__content 
+								img(src="img/avatarS.png", alt="")
+								p.slider__name Kaitlin S.
+							p.slider__desc “I've been set free of my fears”
+							a.slider__button Read more
+						.slider__box 
+							.slider__content 
+								img(src="img/avatarT.png", alt="")
+								p.slider__name Sam N.
+							p.slider__desc “Inspired to tackle any problem in the world!”
+							a.slider__button Read more 
+						.slider__box 
+							.slider__content 
+								img(src="img/avatarT.png", alt="")
+								p.slider__name Sam N.
+							p.slider__desc “Inspired to tackle any problem in the world!”
+							a.slider__button Read more
+		section.experts 
+			.container 
+				.row 
+					.col-lg-6.col-12
+						p.experts__title Meet the experts
+						p.experts__desc The Art of Living is one of the largest volunteer-run non-profits in the world that’s transformed the lives of millions—and continues to develop inspired, skilled, and confident volunteers that make a difference.
+						p.experts__text With an ever-expanding global network of over one million volunteers, you join a community making an impact, dedicated to uplifting individuals and building empowered communities. 
+						p.experts__text  Welcome!
+					.col-lg-6.col-12
+						img(src="img/collage.png", class="experts__img" alt="")
+		section.experts__block
+			.container
+				.experts__block_img 
+					p.experts__block_img_title Sri Sri Ravi Shankar
+					p.experts__block_img_subtitle Founder of the Art of Living
+					p.experts__block_img_text The ultimate purpose of life is to be of service. 
+		section.price 
+			.price__background
+					img(src="img/bgFourth.png", class="price__background_img" alt="")
+					.price__background_gradient
+			.container 
+				p.price__title Your impact in the world matters. <br /> You matter.
+			
+				.col-10.price__box 
+					p.price__subtitle MAKE A DIFFERENCE
+					p.price__desc Volunteer Training Program: $275
+					.col-10.price__box-color  
+						button.price__btn Register Now
+		section.review 
+			.container
+				.col-12 
+					p.review__title I feel like I've been set free of my fears. <br/> One of the most impactful things I've ever done in my entire life!
+					div.review__block
+						img(src="img/avatarS.png", alt="")
+						p.review__name Kaitlin S.
+		section.toolkit 
+			.toolkit__background
+					img(src="img/bgFive.png", class="toolkit__background_img" alt="")
+					.toolkit__background_gradient
+			.container
+				.col-lg-7.col-12
+					p.toolkit__title Your toolkit for inspired action
+					p.toolkit__subtitle Online program: two weekends + one week in service
+					p.toolkit__box You’ll walk away with the skills, experience, and courage to engage and empower your community.
+					p.toolkit__text Practical tools, real experience
+				.col-lg-6.col-12
+					.toolkit__block 
+						img(src="img/lead.png", class="toolkit__block_img" alt="")
+						div
+							p.toolkit__block_title Lead
+							p.toolkit__block_desc Learn how to facilitate a 1-hour meditation session, complete with social connection exercises, breathing techniques, mindful awareness, and guided meditations.
+					.toolkit__block 
+						img(src="img/lead.png", class="toolkit__block_img" alt="")
+						div
+							p.toolkit__block_title Organize
+							p.toolkit__block_desc Gain tools on how to organize Art of Living introductory 1-hour meditation sessions, as well as the 3-day SKY Breath Meditation courses.
+					.toolkit__block 
+						img(src="img/lead.png", class="toolkit__block_img" alt="")
+						div
+							p.toolkit__block_title Master
+							p.toolkit__block_desc Master the techniques, tips, and tricks for clear and concise communication, public speaking, service leadership, and community engagement.
+					.toolkit__block 
+						img(src="img/lead.png", class="toolkit__block_img" alt="")
+						div
+							p.toolkit__block_title Experience
+							p.toolkit__block_desc Integrate and gain practical experience of the new tools and techniques so they’re fully embedded, enriching you with the confidence and assurance—I can do this! Plus, you’ll gain real-world experience via engagement with a service project.
+					button.toolkit__btn Let’s Get Started
+		section.link
+			.link__background
+					img(src="img/bgFourth.png", class="link__background_img" alt="")
+					.link__background_gradient
+			.container 
+				.row.justify-content-center 
+					.col-8
+						.link__box 
+							p.link__title FAQs
+							a.link__desc What will I learn on the Volunteer Training Program? <br />
+							a.link__desc Will I be able to teach SKY Breath Meditation after attending this program? <br />
+							a.link__desc Will I be ready to lead meditations after this course? <br />
+							a.link__desc Do I have to attend all sessions? <br />
+							a.link__desc Do I need to be meditating every day to join the training? <br />
+							a.link__desc Are there any requirements I need to fulfill post-training or in years to come? <br />
+		section.footer 
+			.container 
+				.row.justify-content-center
+					img(src="img/logo.png", class="footer__logo",alt="")
+				.row.footer__distance
+					.col-lg-2.col-md-6.col-12
+						.footer__title Wisdom
+						.footer__link The Happiness Program
+						.footer__link Sahaj Samadhi Meditation
+						.footer__link Sri Sri Yoga
+						.footer__link Art of Silence Retreat
+						.footer__link Meetups
+						.footer__link Testimonials
+					.col-lg-2.col-md-6.col-12
+						.footer__title Founder
+						.footer__link Organization
+						.footer__link Press
+						.footer__link Research
+						.footer__link Bookstore
+						.footer__link Donate 
+						.footer__link Service Projects
+					.col-lg-4.col-md-12.col-12
+						.footer__box
+							.footer__dropdown  
+								.footer__dropdown_btn
+									img(src="img/pin.svg", alt="")			 
+									.footer__title 	Find a Meetup
+									img(src="img/normal.png", alt="")
+								.footer__content 
+									a(href="") Lorem 
+									a(href="") Lorem
+							.footer__dropdown  
+								.footer__dropdown_btn
+									img(src="img/retreat.png", alt="")
+									.footer__title 	Find a Retreat
+									img(src="img/normal.png", alt="")
+								.footer__content 
+									a(href="") Lorem 
+									a(href="") Lorem
+						input(type="text", placeholder="Search", class="footer__input")
+						//- button 
+						//- 	img(src="img/grey.png", alt="")
+						//- img(src="img/grey.png", alt="")	
+						.footer__block 
+							img(src="img/facebook.svg", class="footer__img" alt="")
+							img(src="img/insta.png", class="footer__img" alt="")
+							img(src="img/twitter.png", class="footer__img" alt="")
+							img(src="img/youtube.png", class="footer__img" alt="")
+					.col-lg-2.col-md-6.col-12
+						.footer__title About Us
+						.footer__link Biography
+						.footer__link Wisdom
+						.footer__link Tour Schedule
+						.footer__link Videos
+						.footer__link Awards & Honors 
+					.col-lg-2.col-md-6.col-12
+						.footer__title Blog
+						.footer__link Yoga
+						.footer__link Meditation
+						.footer__link Spirituality
+						.footer__link Lifestyle
+						.footer__link Sri Sri’s blog
+						.footer__link Write for Us
+		section.policy 
+			p.policy__text © 2019 Art of Living
+			.policy__block 
+				p.policy__block_text SMS Policy   
+				p.policy__block_text Privacy Policy
+				p.policy__block_text Cookie Policy 
+				p.policy__block_text.policy__block_text-last Terms of Use
 		script(src="js/main.js")

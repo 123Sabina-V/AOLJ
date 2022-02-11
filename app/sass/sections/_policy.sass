@@ -1,0 +1,32 @@
+.policy
+    box-shadow: inset 0px 1px 0px #E9E9E9
+    padding: 0px 40px
+    height: 60px
+    align-items: center
+    display: flex
+    justify-content: space-between
+    &__block
+        display: flex
+        justify-content: space-between
+        &_text
+            font-family: Work Sans
+            font-style: normal
+            font-weight: 500
+            font-size: 14px
+            line-height: 18px
+            color: #31364E
+            padding-right: 20px
+            &-last
+                padding-right: 0px
+
+@media  ( max-width: 768px )
+    .policy
+        padding: 20px 0px
+        height: max-content
+        flex-direction: column
+        justify-content: center
+        &__block
+            flex-direction: column
+            justify-content: center
+    
+    

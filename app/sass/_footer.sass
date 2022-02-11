@@ -1,13 +1,88 @@
 .footer
+    &__dropdown
+        position: relative
+        &_btn
+            display: flex
+            align-items: center
+            cursor: pointer
+    &__content 
+        display: none
+        position: absolute
+        z-index: 1
+        width: min-content
+    &__distance
+        padding-bottom: 35px
+    &__block
+        display: flex
+        justify-content: center
+        padding-top: 35px
+    &__img
+        border: 1px solid #E9E9E9
+        padding: 10px
+        border-radius: 8px
+        width: 35px
+        height: 35px
+        // height: 19px
+        margin-right: 20px
+        cursor: pointer
+        &:hover
+            border: 1px solid #2465B3
+    &__input
+        padding: 0px 40px
+        background: url("../img/grey.png") no-repeat 10px 10px
+        width: 100%
+        border: 1px solid #E9E9E9
+        border-radius: 8px
+        height: 44px
+        font-family: Work Sans
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 22px
+        color: #9598A6
+    &__logo
+        width: 140px
+        padding: 40px 0px 35px 0px
+    &__title
+        padding: 0 15px
+        font-family: WorkSans-Bold
+        font-style: normal
+        font-weight: 600
+        font-size: 16px
+        line-height: 22px
+        color: #31364E
+        padding-bottom: 10px
+    &__link
+        font-family: Work Sans
+        font-style: normal
+        font-weight: 500
+        font-size: 12px
+        line-height: 18px
+        color: #31364E
+        cursor: pointer
+        padding-bottom: 10px
+        &:hover
+            color: #9598A6
+    &__box
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding-bottom: 35px
 
-@media only screen and (max-width: 1199px)
-	.footer
 
-@media only screen and (max-width: 991px)
-	.footer
-	
-@media only screen and (max-width: 767px)
-	.footer
-
-@media only screen and (max-width: 575px)
-	.footer
+@media (max-width: 992px)
+    .footer
+        &__title
+            text-align: center
+        &__link
+            text-align: center
+        &__box
+            justify-content: space-around
+            padding-top: 50px
+        &__block
+            padding-bottom: 50px
+@media (max-width: 422px)
+    .footer
+        &__box
+            justify-content: center
+            flex-direction: column

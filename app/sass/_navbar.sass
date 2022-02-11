@@ -1,0 +1,102 @@
+.navbar
+    &__block
+        display: flex
+        justify-content: space-between
+    &__section
+        display: flex
+        justify-content: space-between
+        padding: 0 60px
+        height: 70px
+        align-items: center
+    &__dropdown
+        position: relative
+        &_btn
+            display: flex
+            align-items: center
+            padding-right: 40px
+            cursor: pointer
+    &__content 
+        display: none
+        position: absolute
+        z-index: 1
+        width: min-content
+    &__link
+        padding-right: 5px
+        cursor: pointer
+        font-family: Work Sans
+        font-style: normal
+        font-weight: 600
+        font-size: 14px
+        line-height: 20px
+        letter-spacing: 0.3px
+        text-transform: uppercase
+        color: #31364E
+        margin: 8px 0
+        &:hover
+            color: #ED994E
+            text-decoration: underline
+    &__btn
+        font-family: Work Sans
+        font-style: normal
+        font-weight: 600
+        font-size: 16px
+        line-height: 22px
+        text-align: center
+        color: #31364E
+        background: #FFFFFF
+        border: 1px solid #31364E
+        box-sizing: border-box
+        border-radius: 16px
+        padding: 10px 20px
+
+@media (max-width: 992px)
+    span 
+        background: black
+        clear: right
+        float: right
+        height: 2px
+        margin-bottom: 10px
+        transition: all .2s
+        width: 35px
+
+
+    span:last-child 
+        margin-bottom: 0
+
+
+    .active span 
+        transition: all .2s
+
+
+    .active span:first-child 
+        transform: translateY(10px) rotate(50deg)
+
+
+
+    .active span:last-child 
+        transform: translateY(-2px) rotate(-50deg)
+    .navbar
+        &__block
+            padding: 20px 0px
+            width: 100%
+            background: white
+            display: none
+            position: absolute
+            flex-direction: column
+            top: 70px
+            left: 0
+            height: max-content
+            justify-content: center
+            align-items: center
+        &__dropdown_btn
+            padding: 20px 0px
+
+@media (max-width: 992px)
+    .navbar
+        &__section
+            padding: 0 50px
+
+@media (max-width: 576px)
+    .navbar
+        &__section
+            padding: 0 15px

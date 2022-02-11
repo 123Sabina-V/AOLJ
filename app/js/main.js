@@ -36,6 +36,7 @@
 			$('.slider__set').animate( { 'right' : (galleryLeft - galleryLeftAfter) }, 3000);
 			arrowRight.delay(2700).fadeOut(800);
 			arrowLeft.delay(3500).fadeIn(800);
+			
 	  
 		  });
 		});

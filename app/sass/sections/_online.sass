@@ -1,4 +1,14 @@
 .online
+    border-top: 1px solid black
+    &__text
+        font-family: Work Sans
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        line-height: 28px
+        color: #31364E
+        margin: 0
+        padding-bottom: 5px
     &__background
         position: absolute
         width: 100%
@@ -28,7 +38,6 @@
             padding: 0
             margin: 0
     &__title
-        padding: 5px 0px 15px 0px
         font-family: Lora
         font-style: normal
         font-weight: normal
@@ -36,9 +45,8 @@
         line-height: 60px
         color: #31364E
     &__desc
-        font-family: Work Sans
+        font-family: WorkSans-Medium
         font-style: normal
-        font-weight: 500
         font-size: 20px
         line-height: 30px
         color: #31364E
@@ -46,15 +54,17 @@
         margin: 40px 0px 200px 0px
         background: linear-gradient(0deg, #3D8BE8 0%, #89BEEC 100%)
         border-radius: 16px 
-        border-color: transparent
-        font-family: Work Sans
+        border: none
+        font-family: WorkSans-Bold
         font-style: normal
-        font-weight: 600
+        font-weight: 500
         font-size: 16px
         line-height: 22px
         text-align: center
         color: #FFFFFF
         padding: 14px 20px
+        &:hover
+            background: linear-gradient(270deg, #89BEEC 0%, #3D8BE8 100%)
     &__block
         padding-top: 120px
 

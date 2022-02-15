@@ -1,13 +1,20 @@
 .experts
     margin: 449px 0px 114px 0px
-    &__block
+    &__background
+        position: absolute
         width: 100%
         height: 355px
-        object-fit: cover
-        background: url("../img/bg.png") 
-        // background: url("../img/bg.png") no-repeat
+        z-index: -1
         &_img
-            padding: 120px 0px 0px 100px
+            object-fit: cover
+            object-position: 15%
+            z-index: -1
+            vertical-align: middle
+            width: 100%
+            height: 355px
+    &__block
+        padding-top: 120px
+        &_img
             &_title
                 font-family: WorkSans-Bold
                 font-style: normal
@@ -23,7 +30,7 @@
                 font-weight: 600
                 font-size: 18px
                 line-height: 28px
-                color: #FFFFFF 
+                color: rgba(255, 255, 255, 0.6)
             &_text
                 padding-top: 10px
                 font-family: Lora-Italic
@@ -44,6 +51,7 @@
         margin: 0
         padding-bottom: 20px
     &__desc
+        margin: 0
         font-family: Work Sans
         font-style: normal
         font-weight: normal

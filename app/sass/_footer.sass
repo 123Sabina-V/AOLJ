@@ -1,4 +1,10 @@
 .footer
+    &__triangle
+        border-top: 4px solid transparent
+        border-bottom: 4px solid transparent
+        border-left: 4px solid 
+        transform: rotate(90deg)
+        color: #C4C5CC
     &__dropdown
         position: relative
         &_btn
@@ -6,10 +12,28 @@
             align-items: center
             cursor: pointer
     &__content 
+        background: #FFFFFF
+        border: 1px solid #E9E9E9
+        box-sizing: border-box
+        box-shadow: 0px 5px 25px rgba(61, 139, 232, 0.2)
+        width: 217px
+        padding: 10px 20px
+        border-radius: 12px
         display: none
         position: absolute
         z-index: 1
-        width: min-content
+        &_text
+            font-family: WorkSans-Semibold
+            font-style: normal
+            font-weight: 600
+            font-size: 12px
+            line-height: 18px
+            letter-spacing: 0.3px
+            text-transform: uppercase
+            color: #31364E
+        &_block
+            display: flex
+            flex-direction: column
     &__distance
         padding-bottom: 35px
     &__block
@@ -60,7 +84,7 @@
         color: #31364E
         padding-bottom: 10px
     &__link
-        font-family: Work Sans
+        font-family: WorkSans-Medium
         font-style: normal
         font-weight: 500
         font-size: 12px

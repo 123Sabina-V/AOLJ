@@ -122,10 +122,14 @@
             height: 522px
             filter: blur(81.5485px)
 
-@media (max-width: 414px)
+@media (max-width: 992px)
     .slider 
-        &_set
+        &__set
             overflow: auto
+            position: relative
+            display: -webkit-box
+            &::-webkit-scrollbar
+                width: 0
         &__background_img
             height: 406px
         &__animate_btn

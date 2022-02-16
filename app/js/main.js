@@ -14,15 +14,37 @@
 	// 		$(this).find('.navbar__content ').hide();
 	// 	}
 	// );
-	
 
+	// $(document).on("click","button",function(){
+	// 	$(".box").on("mouseover",function(){$(".box").css("background","blue")});
+	// 	$(".box").on("mouseout",function(){$(".box").css("background","")});
+	
+	// })
+
+	$('.navbar__dropdown_btn').on('click', function(e){
+		e.preventDefault();
+		$(this).css('color', '#ED994E');
+		$(this).css('textDecoration', 'underline');
+		$(this).css('textUnderlineOffse', '10px');
+  
+});
+	
+	$('.footer__img').on('click', function(e){
+			e.preventDefault();
+			$(this).css('border-color', '#2465B3');
+	  
+		// .on('click', function(e){
+		// 	e.preventDefault();
+		// 	$(this).attr('border-color', '');
+	  	// });
+	});
 	$('.footer__dropdown')
-			.on('mouseenter', function () {
-				$(this).find('.footer__content ').show();
-			})
-			.on('mouseleave', function () {
-				$(this).find('.footer__content ').hide();
-			});
+		.on('mouseenter', function () {
+			$(this).find('.footer__content').show();
+		})
+		.on('mouseleave', function () {
+			$(this).find('.footer__content').hide();
+		});
 	});
 
 	(function ($) {

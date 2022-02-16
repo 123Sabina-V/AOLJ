@@ -23,12 +23,21 @@
 
 @media  ( max-width: 768px )
     .policy
+        flex-direction: column-reverse
+        flex-wrap: wrap
         padding: 20px 0px
         height: max-content
-        flex-direction: column
-        justify-content: center
         &__block
-            flex-direction: column
-            justify-content: center
-    
-    
+            padding-bottom: 10px
+            &_text
+                padding-right: 10px
+                font-size: 12px
+                line-height: 14px
+                &:nth-of-type(3)::after
+                    content: ''
+                    margin-left: 10px
+                    border-right: 1px solid black
+                &:nth-of-type(2)::after
+                    content: ''
+                    margin-left: 10px
+                    border-right: 1px solid black

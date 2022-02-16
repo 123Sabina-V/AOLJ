@@ -40,6 +40,11 @@
         display: flex
         justify-content: center
         padding-top: 35px
+        &_about
+            padding-left: 60px !important
+        &_blog
+            padding-left: 60px !important
+
     &__img
         border: 1px solid #E9E9E9
         padding: 10px
@@ -50,7 +55,7 @@
         margin-right: 20px
         cursor: pointer
         &:hover
-            border: 1px solid #2465B3
+            border: 1px solid #89BEEC
     &__input
         padding: 0px 40px
         background: url("../img/grey.png") no-repeat 10px 10px
@@ -101,21 +106,61 @@
         padding-bottom: 35px
 
 
-@media (max-width: 992px)
+@media (max-width: 768px)
     .footer
-        &__title
-            text-align: center
-        &__link
-            text-align: center
         &__box
-            justify-content: space-around
-            padding-top: 50px
-        &__block
-            padding-bottom: 50px
-@media (max-width: 422px)
-    .footer
-        &__text
-            padding: 15px
-        &__box
-            justify-content: center
             flex-direction: column
+            padding-bottom: 20px
+        &__dropdown
+            padding-bottom: 15px
+        &__block
+            padding-top: 25px
+            padding-bottom: 15px
+            &_search
+                order: 0
+            &_wisdom
+                order: 1
+                padding-bottom: 25px !important
+            &_founder
+                order: 2
+                padding-bottom: 25px !important
+            &_about
+                order: 3
+                padding-left: 0px !important
+                
+            &_blog
+                order: 4
+                padding-left: 0px !important
+
+@media ( max-width: 576px)
+    .footer
+        &__block
+            &_search
+                padding-right: 15px !important
+                padding-left: 15px !important
+            &_wisdom
+                padding-left: 15px !important
+            &_founder
+                padding-left: 15px !important
+            &_about
+                padding-left: 15px !important
+                
+            &_blog
+                padding-left: 15px !important
+    
+//         &__title
+//             text-align: center
+//         &__link
+//             text-align: center
+//         &__box
+//             justify-content: space-around
+//             padding-top: 50px
+//         &__block
+//             padding-bottom: 50px
+// @media (max-width: 422px)
+//     .footer
+//         &__text
+//             padding: 15px
+//         &__box
+//             justify-content: center
+//             flex-direction: column

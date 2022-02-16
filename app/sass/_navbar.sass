@@ -60,6 +60,10 @@
         &:hover
             color: #ED994E
             transform: rotate(-90deg)
+        &:active
+            color: #ED994E
+            transform: rotate(-90deg)
+            
     &__block
         display: flex
         justify-content: space-between
@@ -73,13 +77,43 @@
     &__dropdown
         position: relative
         &_btn
+            padding-right: 8px
+            cursor: pointer
+            font-family: Work Sans
+            font-style: normal
+            font-weight: 600
+            font-size: 14px
+            line-height: 20px
+            letter-spacing: 0.3px
+            text-transform: uppercase
+            color: #31364E
             display: flex
             align-items: center
             padding-right: 40px
             cursor: pointer
+            &::after
+                content: ''
+                width: 0
+                height: 0
+                border: 4px solid transparent
+                border-top-color: #C4C5CC
+                border-bottom: 0
+                color: #C4C5CC
+                margin-left: 8px
+                &:hover
+                    color: #F7C250
             &:hover
-                color: #ED994E
+                color: #F7C250
+                text-decoration: underline
+                text-underline-offset: 10px
+            &:active
+                color: #F7C250
+                text-decoration: underline
+                text-underline-offset: 10px
+                // border-bottom: 1px solid #ED994E
+                // width: min-content
     &__content
+        margin-top: 14px
         background: #FFFFFF
         border: 1px solid #E9E9E9
         box-sizing: border-box
@@ -104,25 +138,22 @@
             flex-direction: column
 
     &__link
-        padding-right: 8px
-        cursor: pointer
-        font-family: Work Sans
-        font-style: normal
-        font-weight: 600
-        font-size: 14px
-        line-height: 20px
-        letter-spacing: 0.3px
-        text-transform: uppercase
-        color: #31364E
-        &::after
-            border-top: 4px solid transparent
-            border-bottom: 4px solid transparent
-            border-left: 4px solid 
-            transform: rotate(90deg)
-            color: #C4C5CC
+        
         &:hover
             color: #ED994E
-            text-decoration: underline
+            border-bottom: 1px solid #ED994E
+        // &::after
+        //     content: ''
+        //     width: 0
+        //     height: 0
+        //     border: 4px solid transparent
+        //     border-top-color: #C4C5CC
+        //     border-bottom: 0
+        //     color: #C4C5CC
+        //     position: absolute
+        //     top: 9px
+        //     right: 8px
+            // left: 74px
     &__btn
         cursor: pointer
         font-family: Work Sans
